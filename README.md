@@ -28,3 +28,14 @@ CI/CD deployment automation project using GitHub Actions, AWS EC2, Docker, and L
 - Blue-green deployment strategy
 - Monitoring integration
 - Rollback automation
+  ## Project Structure
+
+aws-devops-cicd-pipeline/
+│
+├── .github/workflows/deploy.yml
+├── Dockerfile
+├── deploy.sh
+├── docker-compose.yml
+├── app.py
+├── requirements.txt
+└── README.md
