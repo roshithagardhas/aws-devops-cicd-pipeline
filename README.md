@@ -74,4 +74,3 @@ aws-devops-cicd-pipeline/
       ▼
  Health Verification
 ```
-- Operational efficiency improvements
