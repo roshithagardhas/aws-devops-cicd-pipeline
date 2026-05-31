@@ -74,13 +74,4 @@ aws-devops-cicd-pipeline/
       ▼
  Health Verification
 ```
-
-## Pipeline Features
-
-- Automated build workflows
-- Continuous integration using GitHub Actions
-- Automated deployment execution
-- Linux-based deployment automation
-- Deployment validation checks
-- Application update automation
 - Operational efficiency improvements
