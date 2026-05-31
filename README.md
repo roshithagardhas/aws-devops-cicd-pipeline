@@ -2,12 +2,16 @@
 
 CI/CD deployment automation project using GitHub Actions, AWS EC2, Docker, and Linux.
 
-## Features
-- Automated deployment workflows
-- GitHub Actions CI/CD pipelines
-- Docker container deployment
+## Pipeline Features
+
+- Automated build workflows
+- Continuous integration using GitHub Actions
+- Automated deployment execution
 - Linux-based deployment automation
-- AWS EC2 deployment support
+- Deployment validation checks
+- Application update automation
+- Operational efficiency improvements
+
 
 ## Technologies Used
 - GitHub Actions
@@ -15,6 +19,7 @@ CI/CD deployment automation project using GitHub Actions, AWS EC2, Docker, and L
 - AWS EC2
 - Linux
 - Bash Scripting
+- CI/CD
 
 ## Workflow
 1. Push code to GitHub
@@ -39,3 +44,43 @@ aws-devops-cicd-pipeline/
 ├── app.py
 ├── requirements.txt
 └── README.md
+
+## CI/CD Architecture
+
+```text
+          Developer
+               │
+               ▼
+        GitHub Repository
+               │
+         Push Changes
+               │
+               ▼
+      GitHub Actions Workflow
+               │
+      ┌────────┼────────┐
+      ▼        ▼        ▼
+    Build     Test    Validate
+      │
+      ▼
+ Deployment Script
+      │
+      ▼
+   AWS EC2 Server
+      │
+      ▼
+ Application Update
+      │
+      ▼
+ Health Verification
+```
+
+## Pipeline Features
+
+- Automated build workflows
+- Continuous integration using GitHub Actions
+- Automated deployment execution
+- Linux-based deployment automation
+- Deployment validation checks
+- Application update automation
+- Operational efficiency improvements
