@@ -1,7 +1,23 @@
-version: '3'
-
 services:
   app:
-    build: .
+    container_name: aws-devops-container
+
+    build:
+      context: .
+
+    image: aws-devops-cicd:latest
+
     ports:
       - "5000:5000"
+
+    restart: unless-stopped
+
+    environment:
+      NODE_ENV: production
+      PORT: 5000
+
+    healthcheck:
+      test: ["CMD", "wget", "--spider", "http://localhost:5000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3

@@ -1,0 +1,21 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "AWS DevOps CI/CD Pipeline Application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "devops",
+    "cicd",
+    "docker",
+    "aws"
+  ],
+  "author": "Roshitha Gardhas",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

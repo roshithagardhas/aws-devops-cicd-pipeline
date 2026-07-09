@@ -1,9 +1,13 @@
-FROM python:3.10-slim
+FROM node:20-alpine
 
 WORKDIR /app
 
-COPY . .
+COPY app/package*.json ./
 
-RUN pip install flask
+RUN npm install
 
-CMD ["python", "app.py"]
+COPY app .
+
+EXPOSE 5000
+
+CMD ["npm", "start"]
